@@ -1,0 +1,21 @@
+<?php require ("template/header.phtml") ?>
+
+    <div class="content">
+        <div id="login-form">
+            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']) ?>" method="post" id="loginForm">
+                <div id="user-email">
+                    <label for="userEmail">Email:</label>
+                    <input type="text" id="userEmail" name="userEmail">
+                </div>
+                <div id="user-pass">
+                    <label for="userPass">Password:</label>
+                    <input type="text" id="userPass" name="userPass">
+                </div>
+                <div id="form-submit">
+                    <input type="submit" id="submitForm" name="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+<?php require ("template/footer.phtml") ?>
